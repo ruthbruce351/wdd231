@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="Home Page for WDD 231 - Front End Development I - Ruth (Bruce) Blake">
+    <meta name="author" content="Ruth (Bruce) Blake">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <script src="scripts/getDate.js" defer></script>
+    <script src="scripts/hamButton.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/profile.jpg" alt="Ruth and Malan" width="300">
+        <h1>Ruth (Bruce) Blake</h1>
+    </header>
+
+    <button type="button" id="menu"></button>
+    <nav class="navigation">
+        <ul class="links">
+            <li><a href="#" class="current">Home</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a href="#">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/ruth-blake/">LinkedIn</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="card">
+            <h2>Course Work</h2>
+            <ul class="courselist">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Dallas, Texas</h2>
+            <img src="images/dallas.jpg" alt="Dallas Texas" width="300">
+            <figcaption>Dallas, Texas</figcaption>
+        </section>
+
+        <section class="card">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div id="total-credits">Total Course Hours: 0</div>
+            <hr>
+            <div class="filters">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+            <hr>
+            <div id="courses"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> | Ruth (Bruce) Blake | Texas, USA</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
