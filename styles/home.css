@@ -25,6 +25,7 @@ header {
 header img {
     border: 2px solid white;
     padding: .5rem;
+    width: 100%;
 }
 
 h1 {
