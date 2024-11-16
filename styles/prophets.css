@@ -1,0 +1,27 @@
+h1, footer {
+    text-align: center;
+
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+section {
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    max-width: 340px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-height: 440px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
