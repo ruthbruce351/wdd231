@@ -37,41 +37,6 @@ h1 {
     text-align: center;
 }
 
-nav ul {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.links {
-    margin: 0;
-    background-color: black;
-    width: 100%;
-}
-
-.links a {
-    text-decoration: none;
-    color: white;
-    display: none;
-    padding: 1rem;
-    text-align: center;
-
-}
-
-.links a:hover {
-    background-color: var(--battleship-gray);
-    color: white;
-}
-
-.links li a.current {
-    background-color: var(--lavender-web);
-    color: black;
-    font-weight: bold;
-}
-
 #menu {
     font-size: 2rem;
     border: 0;
@@ -90,8 +55,43 @@ nav ul {
     content: "x";
 }
 
-.open a {
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+
+.links {
+    margin: 0;
+    background-color: black;
+}
+
+.links a {
     display: block;
+    width: 100%;
+    text-decoration: none;
+    padding: .7rem 2vw;
+    color: white;
+    text-align: center;
+}
+
+.links a:hover {
+    background-color: var(--battleship-gray);
+    color: white;
+}
+
+.links li a.current {
+    background-color: var(--lavender-web);
+    color: black;
+    font-weight: bold;
 }
 
 .card {
@@ -166,19 +166,15 @@ footer {
         display: none;
     }
 
-    nav ul {
-        flex-direction: row;
-    }
-
-    .links {
-        flex-direction: row;
+    .links, .link.open {
+        display: flex;
         justify-content: space-evenly;
         padding: 0;
         margin: 0;
     }
 
     .links a {
-        display: block;
+        display: flex;
     }
 
     main {

@@ -1,0 +1,31 @@
+#menu {
+    font-size: 2rem;
+    border: 0;
+    background: none;
+    color: white;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "≡"
+}
+
+#menu.open::before {
+    content: "x";
+}
+
+.open a {
+    display: block;
+}
+
+nav ul {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
