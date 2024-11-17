@@ -21,7 +21,7 @@ function displayMembers(members) {
         if (memberContainer.classList.contains('grid-view')) {
             memberElement.classList.add('member-card');
             memberElement.innerHTML = `
-                <img src="${member.image}" alt="${member.name} Image" />
+                <img loading="lazy" src="${member.image}" alt="${member.name} Image" />
                 <h3>${member.name}</h3>
                 <p>${member.address}</p>
                 <p>${member.phone}</p>
