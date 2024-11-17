@@ -58,7 +58,6 @@ header section p {
     margin: 0;
     text-align: center;
     white-space: nowrap;
-    overflow: wrap;
 }
 
 header section h1 {
