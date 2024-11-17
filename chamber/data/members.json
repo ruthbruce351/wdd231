@@ -1,0 +1,66 @@
+[
+    {
+      "name": "AAA Cafe",
+      "address": "101 Josey Lane, Blake City",
+      "phone": "(123) 456-7890",
+      "website": "https://aaacafe.com",
+      "image": "images/aaacafe.png",
+      "membershipLevel": 1,
+      "otherInfo": "Local cafe."
+    },
+    {
+      "name": "Masu Sushi",
+      "address": "123 Main Street, Blake City",
+      "phone": "(987) 654-3210",
+      "website": "https://masusushi.com",
+      "image": "images/masusushi.jpg",
+      "membershipLevel": 2,
+      "otherInfo": "Fresh sushi and hibachi."
+    },
+    {
+      "name": "Blake Builders",
+      "address": "789 Amber Road, Blake City",
+      "phone": "(555) 123-4567",
+      "website": "https://blakebuilders.com",
+      "image": "images/blakebuilders.jpg",
+      "membershipLevel": 3,
+      "otherInfo": "Construction and real estate services."
+    },
+    {
+      "name": "A Peak in the Attic Antiques",
+      "address": "321 Washington Blvd, Blake City",
+      "phone": "(555) 555-5555",
+      "website": "https://peakintheattic.com",
+      "image": "images/attic.jpg",
+      "membershipLevel": 2,
+      "otherInfo": "Locally owned cafe with organic options."
+    },
+    {
+      "name": "Firehouse Theater",
+      "address": "135 Broadway Drive, Blake City",
+      "phone": "(800) 222-3333",
+      "website": "https://firehousetheater.com",
+      "image": "images/firehouse.png",
+      "membershipLevel": 3,
+      "otherInfo": "Community Theater in an old firehouse."
+    },
+    {
+      "name": "Anytime Gym",
+      "address": "42 A St, Blake City",
+      "phone": "(555) 987-6543",
+      "website": "https://anytimegym.com",
+      "image": "images/anytimegym.jpg",
+      "membershipLevel": 1,
+      "otherInfo": "24/7 gym with top-notch facilities."
+    },
+    {
+      "name": "Book World",
+      "address": "101 Reading St, Blake City",
+      "phone": "(555) 123-9999",
+      "website": "https://bookworld.com",
+      "image": "images/bookworld.jpg",
+      "membershipLevel": 2,
+      "otherInfo": "Independent bookstore specializing in rare finds."
+    }
+  ]
+  

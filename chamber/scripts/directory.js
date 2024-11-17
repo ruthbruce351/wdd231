@@ -1,60 +1,56 @@
-// Get references to elements in the DOM
-const memberContainer = document.getElementById("memberContainer");
-const toggleButton = document.getElementById("toggleView");
+const gridViewButton = document.getElementById('gridViewButton');
+const listViewButton = document.getElementById('listViewButton');
+const memberContainer = document.getElementById('memberContainer');
 
-// Variable to track current view
-let isGridView = true;
-
-// Fetch member data from the JSON file
 async function fetchMembers() {
     try {
         const response = await fetch('data/members.json');
         const members = await response.json();
         displayMembers(members);
     } catch (error) {
-        console.error('Error fetching members:', error);
+        console.error("Error fetching members:", error);
     }
 }
 
-// Function to display members in either grid or list view
 function displayMembers(members) {
-    memberContainer.innerHTML = ''; // Clear any existing content
+    memberContainer.innerHTML = '';
 
     members.forEach(member => {
-        // Create a card for each member
-        const memberCard = document.createElement('div');
-        memberCard.classList.add('member-card');
-        
-        // Add membership level class for styling
-        memberCard.classList.add(`level-${member.membershipLevel}`);
+        const memberElement = document.createElement('div');
 
-        memberCard.innerHTML = `
-            <img src="images/${member.image}" alt="${member.name}">
-            <h2>${member.name}</h2>
-            <p><strong>Address:</strong> ${member.address}</p>
-            <p><strong>Phone:</strong> ${member.phone}</p>
-            <p><a href="${member.website}" target="_blank">Visit Website</a></p>
-            <p><strong>Other Info:</strong> ${member.otherInfo}</p>
-        `;
+        if (memberContainer.classList.contains('grid-view')) {
+            memberElement.classList.add('member-card');
+            memberElement.innerHTML = `
+                <img src="${member.image}" alt="${member.name} Image" />
+                <h3>${member.name}</h3>
+                <p>${member.address}</p>
+                <p>${member.phone}</p>
+                <p><a href="${member.website}" target="_blank">${member.website}</a></p>
+            `;
+        } else {
+            memberElement.classList.add('member-item');
+            memberElement.innerHTML = `
+                <h3>${member.name}</h3>
+                <p>${member.address}</p>
+                <p>${member.phone}</p>
+                <p><a href="${member.website}" target="_blank">${member.website}</a></p>
+            `;
+        }
 
-        memberContainer.appendChild(memberCard);
+        memberContainer.appendChild(memberElement);
     });
-
-    // Apply the appropriate layout class for grid or list view
-    if (isGridView) {
-        memberContainer.classList.add('grid-view');
-        memberContainer.classList.remove('list-view');
-    } else {
-        memberContainer.classList.add('list-view');
-        memberContainer.classList.remove('grid-view');
-    }
 }
 
-// Function to toggle between grid and list view
-toggleButton.addEventListener('click', () => {
-    isGridView = !isGridView; // Toggle the view
-    fetchMembers(); // Re-fetch and display members
+gridViewButton.addEventListener('click', () => {
+    memberContainer.classList.add('grid-view');
+    memberContainer.classList.remove('list-view');
+    fetchMembers();
 });
 
-// Fetch members initially when the page loads
+listViewButton.addEventListener('click', () => {
+    memberContainer.classList.add('list-view');
+    memberContainer.classList.remove('grid-view');
+    fetchMembers(); 
+});
+
 fetchMembers();
