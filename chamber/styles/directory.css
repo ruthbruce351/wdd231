@@ -162,6 +162,7 @@ nav.open {
     border: none;
     border-radius: 5px; 
     transition: background-color 0.3s ease;
+    align-items: center;
 }
 
 #cta-button:hover {
