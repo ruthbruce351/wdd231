@@ -155,7 +155,7 @@ nav.open {
     position: absolute;
     bottom: 15px;
     right: 20px;
-    background-color: var(--battleship-gray);
+    background-color: var(--charcoal);
     color: white; 
     font-size: 3vw; 
     padding: 10px;
@@ -166,7 +166,7 @@ nav.open {
 }
 
 #cta-button:hover {
-    background-color: var(--french-gray);
+    background-color: var(--battleship-gray);
 }
 
 #events,#current-weather,#forecast-weather {
