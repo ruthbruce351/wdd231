@@ -63,6 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById('current-temp').textContent = `Temperature: ${temp}°F`;
             document.getElementById('current-description').textContent = `Condition: ${description.charAt(0).toUpperCase() + description.slice(1)}`;
             document.getElementById('current-icon').src = iconURL;
+            document.getElementById('current-icon').alt = "Current Weather Icon";
             document.getElementById('current-high').textContent = `High: ${highTemp}°F`;
             document.getElementById('current-low').textContent = `Low: ${lowTemp}°F`;
             document.getElementById('current-humidity').textContent = `Humidity: ${humidity}%`;
