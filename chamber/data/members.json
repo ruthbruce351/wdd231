@@ -6,7 +6,9 @@
       "website": "https://aaacafe.com",
       "image": "images/cafe.jpg",
       "membershipLevel": 1,
-      "otherInfo": "Local cafe."
+      "otherInfo": "Local cafe.",
+      "tagLine": "Put a Charge in your Breakfast!",
+      "email":"abrown@aaacafe.com"
     },
     {
       "name": "Masu Sushi",
@@ -15,7 +17,9 @@
       "website": "https://masusushi.com",
       "image": "images/masusushi.jpg",
       "membershipLevel": 2,
-      "otherInfo": "Fresh sushi and hibachi."
+      "otherInfo": "Fresh sushi and hibachi.",
+      "tagLine": "Freshness you can taste!",
+      "email":"psmith@masu.com"
     },
     {
       "name": "Blake Builders",
@@ -24,7 +28,9 @@
       "website": "https://blakebuilders.com",
       "image": "images/blakebuilders.jpg",
       "membershipLevel": 3,
-      "otherInfo": "Construction and real estate services."
+      "otherInfo": "Construction and real estate services.",
+      "tagLine": "Delivering Quality Brick by Brick",
+      "email":"mblake@bbuilders.com"
     },
     {
       "name": "A Peak in the Attic Antiques",
@@ -33,7 +39,9 @@
       "website": "https://peakintheattic.com",
       "image": "images/attic.jpg",
       "membershipLevel": 2,
-      "otherInfo": "Locally owned cafe with organic options."
+      "otherInfo": "Locally owned cafe with organic options.",
+      "tagLine": "You'll find something to 'peak' your interests!",
+      "email":"annek@apeakintheattic.com"
     },
     {
       "name": "Firehouse Theater",
@@ -42,7 +50,9 @@
       "website": "https://firehousetheater.com",
       "image": "images/firehouse.png",
       "membershipLevel": 3,
-      "otherInfo": "Community Theater in an old firehouse."
+      "otherInfo": "Community Theater in an old firehouse.",
+      "tagLine": "Our Plays are HOT!",
+      "email":"info@firehousetheater.com"
     },
     {
       "name": "Anytime Gym",
@@ -51,7 +61,9 @@
       "website": "https://anytimegym.com",
       "image": "images/anytimegym.jpg",
       "membershipLevel": 1,
-      "otherInfo": "24/7 gym with top-notch facilities."
+      "otherInfo": "24/7 gym with top-notch facilities.",
+      "tagLine": "We mean ANY time.",
+      "email":"enroll@eanytimegym.com"
     },
     {
       "name": "Book World",
@@ -60,7 +72,9 @@
       "website": "https://bookworld.com",
       "image": "images/bookworld.jpg",
       "membershipLevel": 2,
-      "otherInfo": "Independent bookstore specializing in rare finds."
+      "otherInfo": "Independent bookstore specializing in rare finds.",
+      "tagLine": "Travel near or far. READ.",
+      "email":"travisjones@ebookworld.com"
     }
   ]
   

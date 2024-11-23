@@ -36,6 +36,7 @@ header .group-two {
     gap: .25rem;
     max-width: 40%;
     justify-content: flex-end;
+    
 }
 
 #logo {
@@ -72,7 +73,7 @@ header section p {
 #contrast {
     font-size: 1.5rem;
     color: white;
-    padding: .25rem;
+    padding: .25rem 1rem;
 }
 
 #menu {
@@ -96,11 +97,13 @@ nav {
     grid-template-rows: 0fr;
     width: 100%;
     transition: grid-template-rows 0.5s ease-out;
+    padding: 1px;
 }
 
 nav ul {
-    overflow: hidden;
+    margin-right: 1px;
     list-style: none;
+    padding: 1px;
 }
 
 nav.open {
@@ -132,6 +135,99 @@ nav.open {
     background-color: var(--lavender-web);
     color: black;
     font-weight: bold;
+}
+
+.hero {
+    display: block;
+    width: 100%;
+    height: auto; 
+    position: relative;
+}
+  
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#cta-button {
+    width: 30%;
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    background-color: var(--battleship-gray);
+    color: white; 
+    font-size: 3vw; 
+    padding: 10px;
+    border: none;
+    border-radius: 5px; 
+    transition: background-color 0.3s ease;
+}
+
+#cta-button:hover {
+    background-color: var(--french-gray);
+}
+
+#events,#current-weather,#forecast-weather {
+    border: 2px solid var(--charcoal);
+    margin: 10px;
+    min-height: 225px;
+}
+
+#events h2,#current-weather h2,#forecast-weather h2 {
+    background-color: var(--charcoal);
+    color: white;
+    padding: 10px;
+}
+
+#current-weather p, #forecast-weather p {
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 10px;
+}
+
+.spotlight-section {
+    display: grid;
+    width: 100%;
+    gap: 20px;
+}
+
+#business-card {
+    border: 1px solid var(--charcoal);
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+}
+
+#photo-info {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 10px;
+    margin-left: 5px;
+    text-align: left;
+    gap: 5px;
+    word-wrap: break-word;
+}
+
+#photo-info .image {
+    display: flex;
+    justify-content: center; 
+    align-items: center;      
+    text-align: center;  
+}
+
+#photo-info img {
+    max-width: 100%;       
+    height: auto;   
+    object-fit: contain;     
+}
+
+#photo-info p {
+    padding: 5px;
+}
+
+hr {
+    margin:5px;
 }
 
 footer {
@@ -246,11 +342,10 @@ main{
     border: 2px solid black;
 }
 
-/* Button styles for when the buttons are toggled */
 button.active {
-    background-color: #d5cfe1; /* Light lavender for active button */
-    color: #464655;            /* Charcoal text color */
-    font-weight: bold;         /* Bold text for active button */
+    background-color: #d5cfe1;
+    color: #464655;           
+    font-weight: bold;       
 }
 
 @media (min-width: 600px) {
@@ -260,6 +355,7 @@ button.active {
 
     nav {
         display: block;
+        margin-right: 4rem;
     }
 
     .links, .link.open {
@@ -276,6 +372,25 @@ button.active {
     footer {
         display: flex;
         justify-content: space-evenly;
+    }
+
+    .top {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 50% 25% 25%;
+    }
+
+    .spotlight-section {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #cta-button {
+        position: absolute;
+        top: 15px;
+        font-size: 2vw;
+        max-height: 10%;
     }
 
 }
