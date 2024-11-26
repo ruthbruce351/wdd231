@@ -21,6 +21,7 @@ header {
     justify-content: center;
     padding: 1rem;
     max-width: 100%;
+    animation: slideInFromTop 0.8s ease-out forwards;
 }
 
 header img {
@@ -28,6 +29,17 @@ header img {
     padding: .5rem;
     width: 100%;
     max-width: 275px;
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);  /* Start above the viewport */
+        opacity: 0;                     /* Start hidden */
+    }
+    100% {
+        transform: translateY(0);      /* End in its normal position */
+        opacity: 1;                     /* Fade in */
+    }
 }
 
 h1 {
