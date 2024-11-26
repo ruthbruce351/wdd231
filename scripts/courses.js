@@ -76,10 +76,11 @@ const courses = [
         ],
         completed: false
     }
-]
+];
 
 const coursesElement = document.querySelector('#courses');
 const totalCreditsElement = document.querySelector('#total-credits');
+const courseDetails = document.querySelector('#course-details'); // Added to select modal
 
 function displayCourses(courses) {
     coursesElement.innerHTML = '';
@@ -89,25 +90,48 @@ function displayCourses(courses) {
     }, 0);
 
     courses.forEach(course => {
-        const div= document.createElement('div');
+        const div = document.createElement('div');
         div.classList.add('course');
 
         if (course.completed) {
-            div.classList.add('completed'); // Add 'completed' class for completed courses
+            div.classList.add('completed');
         }
 
         const h3 = document.createElement('h3');
         h3.textContent = `${course.subject} ${course.number}`;
         div.appendChild(h3);
 
+        // Add click event to each course to show details in the modal
+        div.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
+
         coursesElement.appendChild(div);
-    })
-    
+    });
+
     totalCreditsElement.textContent = `Total Course Hours: ${totalCredits}`;
 }
 
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+        <button id='closeModal'>X</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits:</strong> ${course.credits}</p>
+        <p><strong>Certificate:</strong> ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies:</strong> ${course.technology.join(', ')}</p>
+    `;
+    
+    courseDetails.showModal();
 
-displayCourses(courses);
+    // Close modal when X button is clicked
+    const closeModal = document.querySelector('#closeModal');
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
 
 document.querySelector('#all').addEventListener('click', () => {
     displayCourses(courses);
@@ -122,3 +146,5 @@ document.querySelector('#wdd').addEventListener('click', () => {
     const filteredCourses = courses.filter(course => course.subject === 'WDD');
     displayCourses(filteredCourses);
 });
+
+displayCourses(courses);
