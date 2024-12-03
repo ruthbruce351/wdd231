@@ -357,6 +357,7 @@ form {
       font-size: .8rem;
       padding-top: .2rem;
     }
+    
     h3 {
       font-size: .9rem;
       font-weight: 600;
@@ -395,6 +396,7 @@ form {
       appearance: none;
     }
   }
+
   input:-webkit-autofill{
     -webkit-text-fill-color: #3D405B;
   }
