@@ -58,22 +58,25 @@
     <main>
         <h1>Join Blake City Chamber of Commerce!</h1>
 
+        <section id="main">
         <form method="GET" action="thankyou.html" class="designOne">
-            <label>First Name: <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
-            <label>Last Name: <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
-            <label>Your Title: <input type="text" name="title" required autocomplete="organization-title" title="Organization Title" pattern="[A-Za-z\s\-]{7,}"></label>
-            <label>Email: <input type="email" name="email" required placeholder="johndoe@gmail.com"  title="Your Email" autocomplete="email"></label>
-            <label>Phone Number: <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
-            <label>Business/Organization Name: <input type="text" name="business"  autocomplete="organization" title="Business/Organization Name"></label>
+            <label><strong>First Name:</strong> <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+            <label><strong>Last Name:</strong>: <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+            <label><strong>Your Title:</strong> <input type="text" name="title" autocomplete="organization-title" title="Organization Title" pattern="[A-Za-z\s\-]{7,}"></label>
+            <label><strong>Email:</strong> <input type="email" name="email" required placeholder="johndoe@gmail.com"  title="Your Email" autocomplete="email"></label>
+            <label><strong>Phone Number:</strong> <input type="tel" name="phone"  required autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
+            <label><strong>Business/Organization Name:</strong> <input type="text" name="business"  required autocomplete="organization" title="Business/Organization Name"></label>
 
+            <section id="membership-radio">
             <h3>Select Membership Lavel</h3>
             <label><input type="radio" name="level" value="np" checked> Non Profit Membership</label>
             <label><input type="radio" name="level" value="bronze"> Bronze Membership</label>
             <label><input type="radio" name="level" value="silver"> Silver Membership</label>
             <label><input type="radio" name="level" value="gold"> Gold Membership</label>
+            </section>
 
             <label title="Business Description">
-                <span>Business/Organization Description</span>
+                <span><strong>Business/Organization Description:</strong></span>
                 <textarea id="org-description" name="org-description" required title="Describe your business or organization here." placeholder="Enter a brief description of your business or organization..." rows="4" cols="50"></textarea>
             </label>
 
@@ -139,6 +142,7 @@
               <p>Unlock VIP-only events, direct access to leadership, and priority support.</p>
             </div>
         </div>
+        </section>
     </main>
 
     <footer>
