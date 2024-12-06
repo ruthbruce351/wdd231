@@ -350,12 +350,12 @@ button.active {
 }
 
 form {
-    margin: 1rem 2%;
+    margin: 1rem;
 }
   
 form label {
     display: block;
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding-top: .2rem;
     text-align: left;
     margin-bottom: .5rem;
@@ -387,18 +387,13 @@ form input[type="email"],
 form input[type="tel"],
 form select,
 form textarea {
-    margin: .5rem 0;         
+    margin: .5rem 0; 
+    padding: 12px;       
     border: 1px solid #999; 
     border-left: 6px solid #999;   
     border-radius: 4px;        
-    width: 100%;               
-}
-
-form textarea {
-    padding: .5rem;
-    width: 100%;              
-    border-radius: 4px;
-    resize: vertical;      
+    width: 100%;  
+    font-size: 1.2rem;             
 }
   
 form input:required {border-left-color: #d70000;}
@@ -408,7 +403,7 @@ form input:required:valid{border-left-color: green;}
 form input[type=submit] {
     border: none;
     text-align: center;
-    background-color: #3D405B;
+    background-color: var(--charcoal);
     color: white;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
@@ -419,7 +414,7 @@ form input[type=submit] {
 }
 
 form input:-webkit-autofill{
--webkit-text-fill-color: #3D405B;
+-webkit-text-fill-color: var(--charcoal);
 }
   
 #results {
