@@ -13,6 +13,9 @@
     <script src="../scripts/hamButton.js" defer></script>
     <script src="../scripts/getDate.js" defer></script>
     <script src="scripts/form.js" defer></script>
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/lastVisit.js" defer></script>
+    <script src="scripts/calendar.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
@@ -42,8 +45,8 @@
             <ul class="links">
                 <li><a href="chamber/index.html">Home</a></li>
                 <li><a href="chamber/directory.html">Directory</a></li>
-                <li><a href="chamber/join.html" class="current">Join</a></li>
-                <li><a href="chamber/discover.html">Discover</a></li>
+                <li><a href="chamber/join.html">Join</a></li>
+                <li><a href="chamber/discover.html" class="current">Discover</a></li>
             </ul>
         </nav>
 
@@ -55,12 +58,41 @@
         </div>
     </header>
 
-    <main>
-        <h1>Thank you for submitting your application!</h1>
-    
-        <div id="results"></div>
-    
-    </main>
+    <div class="discover-page">
+        <aside class="sidebar">
+            <div id="visit-message"></div>
+            <div class="demographics">
+                <h2>Demographic Information</h2>
+                <hr>
+                <ul>
+                    <li><strong>Population:</strong> 150,000</li>
+                    <li><strong>Median Income:</strong> $55,000</li>
+                    <li><strong>Median Age:</strong> 35</li>
+                    <li><strong>Education Level:</strong> 40% College Degree</li>
+                </ul>
+            </div>
+            <div class="local-events">
+                <h2>Upcoming Local Events</h2>
+                <hr>
+                <ul>
+                    <li><strong>Annual Farmers Market</strong> - September 15, 2024</li>
+                    <li><strong>Blake City Music Festival</strong> - October 5, 2024</li>
+                    <li><strong>Community Charity Run</strong> - November 10, 2024</li>
+                    <li><strong>Art in the Park</strong> - December 12, 2024</li>
+                </ul>
+            </div>
+            <div id="calendar"></div>
+        </aside>
+
+        <main class="main-content">
+            <img src="images/cafe.jpg" alt="Cafe" loading="lazy" class="gallery-image">
+            <img src="images/firehouse.png" alt="Theater" loading="lazy" class="gallery-image">
+            <img src="images/bookworld.jpg" alt="Book Store" loading="lazy" class="gallery-image">
+            <img src="images/attic.jpg" alt="Thrift Shop" loading="lazy" class="gallery-image">
+            <img src="images/anytimegym.jpg" alt="Gym" loading="lazy" class="gallery-image">
+            <img src="images/blakecity.jpg" alt="City" loading="lazy" class="gallery-image">
+        </main>
+    </div>
 
     <footer>
         <section class="address">

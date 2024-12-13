@@ -528,6 +528,82 @@ form input:-webkit-autofill{
     color: red;
   }
 
+  .discover-page {
+    grid-template-columns: 1fr;
+  }
+
+  .main-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .gallery-image {
+    width: 100%;
+    max-width: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  #visit-message {
+    background-color: var(--charcoal);
+    color: white;
+  }
+
+  .sidebar div {
+    background-color: white;
+    color: var(--charcoal);
+    padding: 20px;
+    margin: 10px;
+    margin-top: 20px;
+    width: 100%;
+    border: 1px solid var(--charcoal);
+    text-align: center;
+    align-content: center;
+    opacity: 0; 
+    transform: translateY(20px); 
+    animation: fadeInUp 1.5s ease-out forwards; 
+  }
+
+  .sidebar div ul {
+    list-style-type: none;
+  }
+
+  .sidebar div h2, .sidebar div hr {
+    margin-bottom: 10px;
+  }
+
+  .gallery-image:hover {
+    transform: none;
+  }
+  
+   #calendar th, #calendar td {
+    padding: 10px;
+    text-align: center;
+  }
+ 
+  #calendar th {
+    background-color: #f2f2f2;
+  }
+
+  #calendar td {
+    cursor: pointer;
+  }
+
+  #calendar td:hover {
+    background-color: #f0f0f0;
+  }
+
+  #calendar .header {
+    margin-bottom: 10px;
+  }
+
+  #calendar .header button {
+    margin: 0 5px;
+  }
+
+
 @media (min-width: 600px) {
     #menu {
         display: none;
@@ -581,5 +657,20 @@ form input:-webkit-autofill{
     #main {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    .discover-page {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        grid-gap: 20px;
+    }
+
+      .gallery-image {
+        transition: transform 0.3s ease;
+        max-width: 100%;
+    }
+      
+      .gallery-image:hover {
+        transform: scale(1.05);
     }
 }
