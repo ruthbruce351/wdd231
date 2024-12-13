@@ -8,16 +8,13 @@ function renderCalendar() {
         "July", "August", "September", "October", "November", "December"
     ];
 
-    // Get current month and year
     const currentMonth = currentDate.getMonth();
     const currentYear = currentDate.getFullYear();
 
-    // Get first day of the month
     const firstDay = new Date(currentYear, currentMonth, 1).getDay();
-    // Get number of days in the month
+    
     const lastDay = new Date(currentYear, currentMonth + 1, 0).getDate();
 
-    // Create calendar header with month and year
     const header = document.createElement("div");
     header.classList.add("header");
     header.innerHTML = `
@@ -26,10 +23,8 @@ function renderCalendar() {
         <button onclick="changeMonth(1)">&#10095;</button>
     `;
 
-    // Create the table structure
     const table = document.createElement("table");
 
-    // Create the table header (weekdays)
     const headerRow = document.createElement("tr");
     const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     weekdays.forEach(day => {
@@ -39,9 +34,8 @@ function renderCalendar() {
     });
     table.appendChild(headerRow);
 
-    // Create the days of the month
     let day = 1;
-    for (let row = 0; row < 6; row++) { // Maximum of 6 rows for the calendar (weeks)
+    for (let row = 0; row < 6; row++) { 
         const tr = document.createElement("tr");
         for (let col = 0; col < 7; col++) {
             const td = document.createElement("td");
@@ -53,20 +47,17 @@ function renderCalendar() {
             tr.appendChild(td);
         }
         table.appendChild(tr);
-        if (day > lastDay) break; // Stop creating rows once all days are added
+        if (day > lastDay) break; 
     }
 
-    // Clear any previous content in the calendar and append new content
     calendarElement.innerHTML = '';
     calendarElement.appendChild(header);
     calendarElement.appendChild(table);
 }
 
-// Change month when clicking the navigation buttons
 function changeMonth(direction) {
     currentDate.setMonth(currentDate.getMonth() + direction);
     renderCalendar();
 }
 
-// Initial rendering of the calendar
 renderCalendar();
