@@ -541,7 +541,7 @@ form input:-webkit-autofill{
   
   .gallery-image {
     width: 100%;
-    max-width: 300px;
+    max-width: 250px;
     object-fit: cover;
     border-radius: 8px;
   }
@@ -577,6 +577,17 @@ form input:-webkit-autofill{
   .gallery-image:hover {
     transform: none;
   }
+
+  .calendar-container {
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  table {
+    align-self: center;
+    width: 100%;
+  }
   
    #calendar th, #calendar td {
     padding: 10px;
@@ -597,6 +608,7 @@ form input:-webkit-autofill{
 
   #calendar .header {
     margin-bottom: 10px;
+    border: none;
   }
 
   #calendar .header button {
