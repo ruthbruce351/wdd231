@@ -541,7 +541,7 @@ form input:-webkit-autofill{
   
   .gallery-image {
     width: 100%;
-    max-width: 250px;
+    max-width: 500px;
     object-fit: cover;
     border-radius: 8px;
   }
@@ -679,7 +679,7 @@ form input:-webkit-autofill{
 
       .gallery-image {
         transition: transform 0.3s ease;
-        max-width: 100%;
+        max-width: 500px;
     }
       
       .gallery-image:hover {
