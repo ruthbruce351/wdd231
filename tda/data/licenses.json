@@ -1,0 +1,107 @@
+[
+    {
+      "name": "Ruth Blake",
+      "phone": "(123) 456-7890",
+      "licenseNumber": "0987654",
+      "categories": "PTLW",
+      "hireDate":"1/1/2021",
+      "expDate":"12/31/2025"
+    },
+    {
+      "name": "Emily Stein",
+      "phone": "(123) 456-7890",
+      "licenseNumber": "0976534",
+      "categories": "PT",
+      "hireDate":"12/1/2023",
+      "expDate":"12/31/2024"
+    },
+    {
+      "name": "Anna Jones",
+      "phone": "(423) 456-9890",
+      "licenseNumber": "0985294",
+      "categories": "P",
+      "hireDate":"10/1/2022",
+      "expDate":"12/31/2025"
+    },
+    {
+      "name": "Joshua Bruce",
+      "phone": "(309) 434-7330",
+      "licenseNumber": "0983330",
+      "categories": "PTL",
+      "hireDate":"11/12/2024",
+      "expDate":"12/31/2024"
+    },
+    {
+      "name": "Beth Blackwelder",
+      "phone": "(798) 120-7890",
+      "licenseNumber": "0911102",
+      "categories": "P",
+      "hireDate":"12/1/2020",
+      "expDate":"12/31/2025"
+    },
+    {
+      "name": "Malan Blake",
+      "phone": "(898) 341-5678",
+      "licenseNumber": "0980099",
+      "categories": "PTLW",
+      "hireDate":"1/1/2022",
+      "expDate":"12/31/2024"
+    },
+    {
+      "name": "Hannah Rogers",
+      "phone": "(435) 457-7290",
+      "licenseNumber": "0988655",
+      "categories": "PTL",
+      "hireDate":"1/1/2024",
+      "expDate":"12/31/2025"
+    },
+    {
+        "name": "Michael Bishop",
+        "phone": "(321) 456-9998",
+        "licenseNumber": "0987999",
+        "categories": "PT",
+        "hireDate":"1/1/2021",
+        "expDate":"12/31/2025"
+      },
+      {
+        "name": "Thomas David",
+        "phone": "(224) 442-7890",
+        "licenseNumber": "0909876",
+        "categories": "PTLW",
+        "hireDate":"1/1/2021",
+        "expDate":"12/31/2025"
+      },
+      {
+        "name": "Henry Daniel",
+        "phone": "(316) 631-7890",
+        "licenseNumber": "0983161",
+        "categories": "P",
+        "hireDate":"3/16/2024",
+        "expDate":"12/31/2025"
+      },
+      {
+        "name": "Elizabeth Malan",
+        "phone": "(444) 723-9677",
+        "licenseNumber": "0876598",
+        "categories": "P",
+        "hireDate":"1/1/2021",
+        "expDate":"12/31/2025"
+      },
+      {
+        "name": "Marie Skyler",
+        "phone": "(876) 334-9988",
+        "licenseNumber": "0908089",
+        "categories": "PTL",
+        "hireDate":"1/1/2021",
+        "expDate":"12/31/2025"
+      },
+      {
+        "name": "Skyler Brackett",
+        "phone": "(223) 435-9877",
+        "licenseNumber": "0983333",
+        "categories": "PTL",
+        "hireDate":"1/1/2021",
+        "expDate":"12/31/2025"
+      }
+  ]
+  

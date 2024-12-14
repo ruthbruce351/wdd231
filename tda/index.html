@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blake City Department of Agriculture</title>
+    <meta name="description" content="Home Page for Blake City Department of Agriculture - WDD 231 - Front End Development I - Ruth (Bruce) Blake">
+    <link rel="icon" href="tda/images/favicon.ico">
+    <meta name="author" content="Ruth (Bruce) Blake">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/tda.css">
+    <script src="https://kit.fontawesome.com/b22e38f5ac.js" defer crossorigin="anonymous"></script>
+    <script src="scripts/hamButton.js" defer></script>
+    <script src="scripts/getDate.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Blake City Department of Agriculture Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ruthbruce351.github.io/wdd231/tda/index.html">
+    <meta property="og:image" content="https://ruthbruce351.github.io/wdd231/tda/images/doa.jpg">
+    <meta property="og:description" content="Home Page for Blake City Department of Agriculture - WDD 231 - Front End Development I - Ruth (Bruce) Blake">
+</head>
+
+<body>
+    <header>
+        <div class="group-one">
+        <section id="logo">
+        <i class="fa-solid fa-b"></i>
+        </section>
+
+        <section>
+        <h1>Blake City</h1>
+        <p>Department of Agriculture</p>
+        </section>
+        </div>
+
+        <div class="group-two">
+
+        <nav class="navigation">
+            <ul class="links">
+                <li><a href="index.html" class="current">Home</a></li>
+                <li><a href="licenses.html">Licenses</a></li>
+                <li><a href="application.html">Application</a></li>
+            </ul>
+        </nav>
+
+        <button type="button" id="menu" aria-label="Open Menu"></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+        <picture>
+            <img src="images/doa.jpg" alt="Person planting plants">
+        </picture>
+        </section>
+
+        <h1>Home</h1>
+
+        <div class="top">
+            <section id="updates">
+                <h2>Latest News!</h2>
+                <br>
+                <p><strong>Thursday, December 5, 2024</strong></p>
+                <br>
+                <p>Today, Texas Agriculture Commissioner Sid Miller and the Texas Department of Agriculture (TDA) call on Texans to be vigilant against unlicensed pesticide businesses operating in their communities. These unlicensed pest control operations not only break the law but may also pose severe risks to public health and safety. Protect yourself and your community by ensuring that any pest control services you use are properly licensed and authorized.</p>
+                <br>
+                <hr>
+                <br>
+                <p><strong>Thursday, December 5, 2024</strong></p>
+                <br>
+                <p>Today, Texas Agriculture Commissioner Sid Miller and the Texas Department of Agriculture (TDA) call on Texans to be vigilant against unlicensed pesticide businesses operating in their communities. These unlicensed pest control operations not only break the law but may also pose severe risks to public health and safety. Protect yourself and your community by ensuring that any pest control services you use are properly licensed and authorized.</p>
+                <br>
+            </section>
+            
+            <div id="current-weather">
+                <h2>Current Weather</h2>
+                
+                <section>
+                <img id="current-icon" src="images/doa.jpg" alt="Default Image" width="200px">
+                </section>
+                
+                <section>
+                <p id="current-temp"></p>
+                <p id="current-description"></p>
+                <p id="current-high"></p>
+                <p id="current-low"></p>
+                <p id="current-humidity"></p>
+                <p id="sunrise"></p>
+                <p id="sunset"></p>
+                </section>
+            </div>
+            
+            <div id="forecast-weather">
+                <h2>3-Day Forecast</h2>
+                <div id="forecast-container"></div>
+            </div>
+
+        </div> 
+    </main>
+
+        <footer>
+            <section class="address">
+                <p><strong>Blake City Department of Agriculture</strong></p>
+                <p>620 Amber Lane</p>
+                <p>Blake City, USA</p>
+                <p>departmentofagriculture@blakecity.gov</p>
+                <p>(479) 659-8412</p>
+            </section>
+    
+            <section class="social-links">
+                <a href="https://www.linkedin.com" target="_blank" aria-label="Linked In"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+                <a href="https://www.twitter.com" target="_blank" aria-label="Twitter"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></a>
+                <a href="https://www.youtube.com" target="_blank" aria-label="YouTube"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg></a>
+            </section>
+    
+            <section class="class-info">
+                <p>WDD Class Project</p>
+                <p>Ruth Blake</p>
+                <p>©<span id="currentyear"></span> | Blake City Department of Agriculture</p>
+                <p>Last Modification: <span id="lastModified"></span></p>
+            </section>
+        </footer>
+    </body>
+    </html>
